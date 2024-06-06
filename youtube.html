@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .Play-btn{
+            text-align: center;
+        }
+        .Play-btn button{
+            width: 80px;
+            height: 40px;
+            border-radius: 30px;
+            border: 0.5px solid #E9E9E9;
+            color: black;
+            background-color: white;
+            font-size: 15px;
+            margin-right: 20px;
+            
+        }
+        .Play-btn button:focus {
+            background-color: #8E43E7;
+            color: white;
+            font-weight: 600;
+        }
+
+        .gerne-total-list {
+            display:flex;
+            position: relative;
+            width: 1440px;
+            overflow: hidden;
+        }
+
+        .gerne-list {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            position: relative;
+            margin-top: 40px;
+            
+        }
+
+        .gerne-list__content-title {
+            margin-bottom: 5px;
+            width: 200px;
+    
+        }
+
+        .gerne-list__content-title span {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .gerne-list__content-time {
+            color: #A5A5A5;
+        }
+
+        #badge button {
+            color: #B070F0;
+            border: 0.1px solid #B070F0;
+            background-color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            }
+
+        #badge2 button {
+            color: chocolate;
+            border: 0.1px solid chocolate;
+            background-color: white;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        .gerne-list__ranking {
+            position: absolute;
+            bottom: 120px;
+            color: white;
+            font-size: 60px;
+            font-weight: 900;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gerne-list__content{
+            transition: transform 0.5s ease-in-out;
+        }
+        .gerne-list-btn {
+            position: absolute;
+            opacity: 0.8;
+            top: 120px;
+            z-index: 10;
+        }
+
+        .gerne-list-btn i {
+            opacity: 1;
+        }
+
+        .gerne-screen-btn-right {
+            right:10px;
+        }
+
+        #gerne-prevbtn,#gerne-nextbtn{
+            border: none;
+            background-color: aqua;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .card-body{
+            padding: 0 0 1.5rem 2rem;
+            width: 39rem;
+        }
+        .card{
+            border: 1px solid #e8e8e8;
+            border-radius: 0 0 1.2rem 1.2rem;
+            margin-left: 90px;
+            margin-right: 90px;
+            
+        }
+        .span_exp{
+            font-style: normal;
+            font-weight: 700;  
+        }
+        .gerne-total-list{
+            margin-top: 40px;
+        }
+
+
+        
+          
+    </style>
+</head>
+<body>
+    <div>
+        <h1>ArtPark Play</h1>
+    </div>
+    <div>
+        <div class="Play-btn">
+            <button>추천영상</button>
+            <button>뮤지컬</button>
+            <button>콘서트</button>
+            <button>전시/행사</button>
+            <button>클래식</button>
+            <button>아동/가족</button>
+            <button>연극</button>
+        </div>
+    </div>
+    <div class="gerne-total-list">  <!--요소를 감싸고 있는 가장 큰 div-->
+        <!-- 이 밑은 왼쪽버튼 -->
+        <div class="gerne-list-btn gerne-screen-btn-left">
+            <button id="gerne-prevbtn"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
+        </div>
+      
+        
+        <div class="card" style="width: 18rem;">
+            <iframe width="289" height="175" src="https://www.youtube.com/embed/bYXPVkjxmLM?si=WLXMsF1RJ6gWWHpL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/23/23016085_p.gif" alt="" width="52" height="66">
+                <span class="span_exp">10주년 맞은 최강 뮤직 페스티벌! 울트라 뮤직 페스티벌 코리아 2024</span>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <iframe width="289" height="175" src="https://www.youtube.com/embed/L6zxQPENYH4?si=0BlSKV9tGV3gYUUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card-body">
+                <div>
+                    <img src="https://ticketimage.interpark.com/Play/image/large/24/24005706_p.gif" alt="" width="52" height="66">
+                </div>
+            <div>
+                <span class="span_exp">[인픽!요즘공연] 전설적인 배우들이 총출동하는 연극 '햄릿' 출연진 인터뷰!</span>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <iframe width="289" height="175" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/23/23017356_p.gif" alt="" width="52" height="66">
+                <span class="span_exp">대망의 무대! World DJ Festival 2024 스팟 영상</span>
+            </div>
+        </div>
+        
+        
+        
+        <!-- 새로운 요소를 추가하실때는 여기다 추가하시면됩니다 -->
+        <!-- 밑에는 오른쪽버튼 -->
+        <div class="gerne-list-btn gerne-screen-btn-right">
+            <button id="gerne-nextbtn"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
